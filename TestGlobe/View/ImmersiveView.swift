@@ -26,6 +26,12 @@ struct ImmersiveView: View {
                 // https://developer.apple.com/
             }
         }
+        .gesture(
+            DragGesture()
+                .onEnded { value in
+                    
+                }
+        )
     }
 }
 

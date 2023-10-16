@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB4C137A2ADD96A50062CC4D /* SquarewaveBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13792ADD96A50062CC4D /* SquarewaveBoardView.swift */; };
+		BB4C137C2ADD990E0062CC4D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BB4C137B2ADD990E0062CC4D /* Localizable.xcstrings */; };
+		BB4C13802ADDA1BD0062CC4D /* Usermodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C137F2ADDA1BD0062CC4D /* Usermodel.swift */; };
+		BB4C13822ADDA1F00062CC4D /* SquarewaveextraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13812ADDA1F00062CC4D /* SquarewaveextraView.swift */; };
+		BB4C13842ADDA2120062CC4D /* ServercircuitModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13832ADDA2120062CC4D /* ServercircuitModels.swift */; };
+		BB4C13892ADDA25D0062CC4D /* SimulationSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13882ADDA25D0062CC4D /* SimulationSubView.swift */; };
+		BB4C138A2ADDA25D0062CC4D /* SimulationViewGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13872ADDA25D0062CC4D /* SimulationViewGestures.swift */; };
+		BB4C13912ADDA3920062CC4D /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13902ADDA3920062CC4D /* ColorExtension.swift */; };
+		BB4C13932ADDA3F90062CC4D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13922ADDA3F90062CC4D /* StringExtension.swift */; };
+		BB4C13952ADDA4A80062CC4D /* PhotoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4C13942ADDA4A80062CC4D /* PhotoCacheManager.swift */; };
 		BB9B491B2AD67BA600FC780C /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BB9B491A2AD67BA600FC780C /* RealityKitContent */; };
 		BB9B491D2AD67BA600FC780C /* TestGlobeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B491C2AD67BA600FC780C /* TestGlobeApp.swift */; };
 		BB9B491F2AD67BA600FC780C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B491E2AD67BA600FC780C /* ContentView.swift */; };
@@ -17,6 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB4C13792ADD96A50062CC4D /* SquarewaveBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquarewaveBoardView.swift; sourceTree = "<group>"; };
+		BB4C137B2ADD990E0062CC4D /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		BB4C137F2ADDA1BD0062CC4D /* Usermodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usermodel.swift; sourceTree = "<group>"; };
+		BB4C13812ADDA1F00062CC4D /* SquarewaveextraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquarewaveextraView.swift; sourceTree = "<group>"; };
+		BB4C13832ADDA2120062CC4D /* ServercircuitModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServercircuitModels.swift; sourceTree = "<group>"; };
+		BB4C13872ADDA25D0062CC4D /* SimulationViewGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewGestures.swift; sourceTree = "<group>"; };
+		BB4C13882ADDA25D0062CC4D /* SimulationSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSubView.swift; sourceTree = "<group>"; };
+		BB4C13902ADDA3920062CC4D /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		BB4C13922ADDA3F90062CC4D /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BB4C13942ADDA4A80062CC4D /* PhotoCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCacheManager.swift; sourceTree = "<group>"; };
 		BB9B49152AD67BA600FC780C /* TestGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9B49192AD67BA600FC780C /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		BB9B491C2AD67BA600FC780C /* TestGlobeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGlobeApp.swift; sourceTree = "<group>"; };
@@ -40,9 +60,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB4C137D2ADDA15E0062CC4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB9B491E2AD67BA600FC780C /* ContentView.swift */,
+				BB9B49202AD67BA600FC780C /* ImmersiveView.swift */,
+				BB4C13792ADD96A50062CC4D /* SquarewaveBoardView.swift */,
+				BB4C13812ADDA1F00062CC4D /* SquarewaveextraView.swift */,
+				BB4C13882ADDA25D0062CC4D /* SimulationSubView.swift */,
+				BB4C13872ADDA25D0062CC4D /* SimulationViewGestures.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB4C137E2ADDA1750062CC4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB4C137F2ADDA1BD0062CC4D /* Usermodel.swift */,
+				BB4C13942ADDA4A80062CC4D /* PhotoCacheManager.swift */,
+				BB4C13832ADDA2120062CC4D /* ServercircuitModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB4C138F2ADDA3600062CC4D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB4C13902ADDA3920062CC4D /* ColorExtension.swift */,
+				BB4C13922ADDA3F90062CC4D /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		BB9B490C2AD67BA600FC780C = {
 			isa = PBXGroup;
 			children = (
+				BB4C137B2ADD990E0062CC4D /* Localizable.xcstrings */,
 				BB9B49172AD67BA600FC780C /* TestGlobe */,
 				BB9B49182AD67BA600FC780C /* Packages */,
 				BB9B49162AD67BA600FC780C /* Products */,
@@ -61,8 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				BB9B491C2AD67BA600FC780C /* TestGlobeApp.swift */,
-				BB9B491E2AD67BA600FC780C /* ContentView.swift */,
-				BB9B49202AD67BA600FC780C /* ImmersiveView.swift */,
+				BB4C137E2ADDA1750062CC4D /* Model */,
+				BB4C137D2ADDA15E0062CC4D /* View */,
+				BB4C138F2ADDA3600062CC4D /* Extension */,
 				BB9B49222AD67BA600FC780C /* ImageBasedLighting.skybox */,
 				BB9B49242AD67BA700FC780C /* Assets.xcassets */,
 				BB9B49292AD67BA700FC780C /* Info.plist */,
@@ -132,6 +186,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BB9B490C2AD67BA600FC780C;
 			productRefGroup = BB9B49162AD67BA600FC780C /* Products */;
@@ -150,6 +205,7 @@
 			files = (
 				BB9B49252AD67BA700FC780C /* Assets.xcassets in Resources */,
 				BB9B49282AD67BA700FC780C /* Preview Assets.xcassets in Resources */,
+				BB4C137C2ADD990E0062CC4D /* Localizable.xcstrings in Resources */,
 				BB9B49232AD67BA600FC780C /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,9 +217,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4C13842ADDA2120062CC4D /* ServercircuitModels.swift in Sources */,
+				BB4C138A2ADDA25D0062CC4D /* SimulationViewGestures.swift in Sources */,
 				BB9B491F2AD67BA600FC780C /* ContentView.swift in Sources */,
 				BB9B491D2AD67BA600FC780C /* TestGlobeApp.swift in Sources */,
 				BB9B49212AD67BA600FC780C /* ImmersiveView.swift in Sources */,
+				BB4C13892ADDA25D0062CC4D /* SimulationSubView.swift in Sources */,
+				BB4C13802ADDA1BD0062CC4D /* Usermodel.swift in Sources */,
+				BB4C13952ADDA4A80062CC4D /* PhotoCacheManager.swift in Sources */,
+				BB4C13932ADDA3F90062CC4D /* StringExtension.swift in Sources */,
+				BB4C137A2ADD96A50062CC4D /* SquarewaveBoardView.swift in Sources */,
+				BB4C13912ADDA3920062CC4D /* ColorExtension.swift in Sources */,
+				BB4C13822ADDA1F00062CC4D /* SquarewaveextraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

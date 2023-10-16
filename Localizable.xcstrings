@@ -1,0 +1,44 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "Augmented Reality" : {
+
+    },
+    "Confirm" : {
+
+    },
+    "Online Task" : {
+
+    },
+    "Photo Cache" : {
+
+    },
+    "Show Immersive Space" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "进入沉浸式空间"
+          }
+        }
+      }
+    },
+    "Simulation" : {
+
+    },
+    "Squarewave Generator" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "矩形波发生器"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
