@@ -13,29 +13,21 @@ struct ContentView: View {
     @Binding var AppImmersionstyle:ImmersionStyle
     @State private var showImmersiveSpace = false
     @State private var immersiveSpaceIsShown = false
-
+//    @State private var simulationImageExpand = false
+    @EnvironmentObject var Usermodel:Appusermodel
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
-            VStack {
-                //Model3D(named: "SquarewaveModel", bundle: realityKitContentBundle)
-                //.rotation3DEffect(.init(degrees: 90), axis: (1,0,0))
-                if !immersiveSpaceIsShown{
-                    Image("squarewave")
-                        .resizable().scaledToFit()
-                        .padding(.bottom, 50)
-
-                }
-                
-
-                Text("Squarewave Generator")
-
-                Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
-                    .toggleStyle(.button)
-                    .padding(.top, 50)
+        Group{
+            if !immersiveSpaceIsShown{
+                immersiveSpaceNotShownView
+            }else{
+                immersiveSpaceIsShownView(SimualtionAreaGeometry: nil)
             }
-            .padding()
+
+        }
+        .padding()
         .onChange(of: showImmersiveSpace) { _, newValue in
             Task {
                 if newValue {
@@ -71,17 +63,30 @@ extension ContentView{
         }
     }
     
-    private func immersiveSpaceIsShownView(SimualtionAreaGeometry:GeometryProxy)->some View{
-        HStack{
+    private func immersiveSpaceIsShownView(SimualtionAreaGeometry:GeometryProxy?)->some View{
             VStack{
-                Text("Squarewave Generator")
-                
-                Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
-                    .toggleStyle(.button)
-                    .padding(.top, 50)
+                if !Usermodel.SimulationImageExpand{
+                    HStack{
+                        Spacer()
+                        VStack{
+                            Text("Squarewave Generator")
+                            
+                            Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
+                                .toggleStyle(.button)
+                                .padding(.top, 50)
+                            
+                        }
+                        Image("squarewave")
+                            .resizable().scaledToFit()
+                            .clipShape(.rect(cornerRadius: 5))
+                            .padding(.bottom)
+                    }.padding(.trailing)
+                }
+                GeometryReader{
+                    SquarewaveextraView(outergeometry: $0)
+                }
+                .padding(.leading)
             }
-            SquarewaveextraView(outergeometry: SimualtionAreaGeometry)
-        }
     }
 }
 

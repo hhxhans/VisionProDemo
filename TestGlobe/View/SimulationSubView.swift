@@ -143,8 +143,8 @@ struct InputConfirmButton: View {
                 .foregroundColor(Buttondisable ? Color.secondary:Color.white)
         }
         .disabled(Buttondisable)
-            .buttonStyle(.borderedProminent)
-            .buttonBorderShape(.roundedRectangle(radius: 1))
+//            .buttonStyle(.borderedProminent)
+//            .buttonBorderShape(.roundedRectangle(radius: 1))
     }
 }
 
@@ -174,11 +174,13 @@ struct SimulationImageupperLabel: View {
             }
             .padding(.trailing,5)
             .disabled(RefreshButtondisable)
-//            Button(action:zoomButtonaction){
-//                Image(systemName:imagezoom ? "arrow.down.right.and.arrow.up.left":"arrow.up.left.and.arrow.down.right")
-//                    .font(.title2)
-//            }
-//            .padding(.trailing,5)
+            Button(action:{
+                Usermodel.SimulationImageExpand.toggle()
+            }){
+                Image(systemName:Usermodel.SimulationImageExpand ? "arrow.down.right.and.arrow.up.left":"arrow.up.left.and.arrow.down.right")
+                    .font(.title2)
+            }
+            .padding(.trailing,5)
             Spacer()
         }
     }
@@ -193,7 +195,7 @@ struct AsyncImageContent:View{
         case .empty:
             ZStack{
                 ProgressView()
-            }.frame(width: geometrysize.width, height: geometrysize.width)
+            }
         case .success(let returnedImage):
             returnedImage
                 .resizable()
@@ -203,7 +205,7 @@ struct AsyncImageContent:View{
             ZStack{
                 Image(systemName: "questionmark")
                     .font(.headline)
-            }.frame(width: geometrysize.width, height: geometrysize.width)
+            }
         default:
             Image(systemName: "questionmark")
                 .font(.headline)

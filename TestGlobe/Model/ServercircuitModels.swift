@@ -33,7 +33,7 @@ class ServercircuitViewModel:ObservableObject{
     
     init() {
         requestcount=0
-        status = .start
+        status = .input
         inputwindowyoffset=0
         imageyoffset=0
         imagezoom=false
@@ -42,7 +42,7 @@ class ServercircuitViewModel:ObservableObject{
     
     /// view status move forward
     func statusforward()->Void{
-        status=ARSimulationextraviewstatus(rawValue: status.rawValue+1) ?? ARSimulationextraviewstatus(rawValue: 0)!
+        status=ARSimulationextraviewstatus(rawValue: status.rawValue+1) ?? ARSimulationextraviewstatus(rawValue: 1)!
     }
     /// view status move backward
     func statusbackward()->Void{

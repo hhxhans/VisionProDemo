@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct TestGlobeApp: App {
-    @State var AppImmersionStyle:ImmersionStyle = ProgressiveImmersionStyle()
+    @State var AppImmersionStyle:ImmersionStyle = .mixed
     @StateObject var Usermodel:Appusermodel=Appusermodel()
     var body: some Scene {
 
@@ -18,7 +18,7 @@ struct TestGlobeApp: App {
         }
         .immersionStyle(
             selection: $AppImmersionStyle,
-            in: .mixed
+            in: .mixed, .progressive, .full
         )
         WindowGroup {
             ContentView(AppImmersionstyle: $AppImmersionStyle)

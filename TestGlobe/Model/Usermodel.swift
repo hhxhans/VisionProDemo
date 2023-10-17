@@ -47,7 +47,7 @@ struct ArappUser:Identifiable,Codable {
     /// authority >=0 allow user to log in
     var authority:Int = 1
     /// server address of sending requests
-    var simulationurl:String="192.168.101.190:8000"
+    var simulationurl:String="10.198.14.247:8000"
     var status:Bool=false
 }
 
@@ -83,6 +83,7 @@ class Appusermodel:ObservableObject{
     let Circuitupdatetabheightratio:CGFloat
     let manager:PhotoCacheManager
     @Published var path: NavigationPath
+    @Published var SimulationImageExpand:Bool
 
     
     init(){
@@ -102,12 +103,13 @@ class Appusermodel:ObservableObject{
         Actiondate=Date()
         Receivedate=Date()
         Urladdress=[
-            "10.198.72.122:8000",
+            "10.198.14.247:8000",
             "10.198.71.148:8000"
         ]
         Circuitupdatetabheightratio=0.08
         manager=PhotoCacheManager.instance
         path=NavigationPath()
+        SimulationImageExpand=false
     }
     //MARK: Functions
     /// Returns whether the login view url is legal text
