@@ -68,12 +68,24 @@ extension ContentView{
                 if !Usermodel.SimulationImageExpand{
                     HStack{
                         Spacer()
+                        VStack(alignment: .trailing){
+                            Button("Mixed") {
+                                AppImmersionstyle = .mixed
+                            }
+                            Button("Progressive") {
+                                AppImmersionstyle = .progressive
+                            }
+                            Button("Full") {
+                                AppImmersionstyle = .full
+                            }
+                        }
                         VStack{
                             Text("Squarewave Generator")
                             
                             Toggle("Show Immersive Space", isOn: $showImmersiveSpace)
                                 .toggleStyle(.button)
                                 .padding(.top, 50)
+                            
                             
                         }
                         Image("squarewave")

@@ -175,7 +175,9 @@ struct SimulationImageupperLabel: View {
             .padding(.trailing,5)
             .disabled(RefreshButtondisable)
             Button(action:{
-                Usermodel.SimulationImageExpand.toggle()
+                withAnimation(.easeInOut) {
+                    Usermodel.SimulationImageExpand.toggle()
+                }
             }){
                 Image(systemName:Usermodel.SimulationImageExpand ? "arrow.down.right.and.arrow.up.left":"arrow.up.left.and.arrow.down.right")
                     .font(.title2)
